@@ -1,0 +1,1 @@
+{"name":"Local: aaa","url":"d:\\Visual studio files\\c++\\aaa.cpp","tests":[{"id":1611834555479,"input":"7\n-5 -3 -1 0 1 4 5","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Visual studio files\\c++\\aaa.cpp","group":"local","local":true}

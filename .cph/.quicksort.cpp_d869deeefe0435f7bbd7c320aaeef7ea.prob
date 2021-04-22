@@ -1,0 +1,1 @@
+{"name":"Local: quicksort","url":"d:\\Visual studio files\\c++\\quicksort.cpp","tests":[{"id":1610984931679,"input":"7\n5 4 3 2 1 5 2","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Visual studio files\\c++\\quicksort.cpp","group":"local","local":true}

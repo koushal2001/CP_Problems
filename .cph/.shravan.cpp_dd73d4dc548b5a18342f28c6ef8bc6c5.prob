@@ -1,0 +1,1 @@
+{"name":"Local: shravan","url":"d:\\Visual studio files\\c++\\shravan.cpp","tests":[{"id":1611481528122,"input":"3\n5 6 7\n1 2 3","output":"3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Visual studio files\\c++\\shravan.cpp","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: qsort","url":"d:\\Visual studio files\\c++\\qsort.cpp","tests":[{"id":1611073311962,"input":"5 \n3 3 3 3 3","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Visual studio files\\c++\\qsort.cpp","group":"local","local":true}

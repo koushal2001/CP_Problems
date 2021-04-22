@@ -1,0 +1,1 @@
+{"name":"Local: vvv","url":"d:\\Visual studio files\\c++\\vvv.cpp","tests":[{"id":1611866209853,"input":"21 5 2\n2 4\n4 7","output":"4"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Visual studio files\\c++\\vvv.cpp","group":"local","local":true}
