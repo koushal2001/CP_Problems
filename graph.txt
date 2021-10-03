@@ -1,0 +1,106 @@
+  #include <bits/stdc++.h>
+using namespace std;
+ 
+ 
+class Graph
+{
+public:
+    
+    map<int, list<int>> adj;
+ 
+    
+    void addEdge(int v, int w);
+ 
+     void dfs_util(int n,vector<bool>&vis);
+    void DFS(int v);
+    void bfs(int s);
+};
+ 
+void Graph::addEdge(int v, int w)
+{
+    adj[v].push_back(w);  
+}
+
+void Graph::dfs_util(int x,vector<bool>&vis){
+    if(vis[x]==false){
+        vis[x]=true;
+        cout<<x<<" ";
+        for(auto i: adj[x]){
+            if(vis[i]==false){
+                dfs_util(i,vis);
+            }
+        }
+    }
+}
+ 
+void Graph::DFS(int v)
+{
+    vector<bool>visited(adj.size(),false);
+     
+   for(auto i:adj){
+       if(!visited[i.first]){
+           dfs_util(i.first,visited);
+       }
+   }
+     
+    
+}
+void Graph:: bfs(int x){
+    queue<int>q1;
+    vector<int>vis(adj.size(),false);
+    
+    q1.push(x);
+    while(!q1.empty()){
+        int m=q1.front();
+        cout<<m<<" ";
+        q1.pop();
+        vis[m]=true;
+        for(auto i:adj[m]){
+            if(!vis[i]){
+                q1.push(i);
+                vis[i]=true;
+            }
+        }
+    }
+}
+ 
+// Driver code
+int main()
+{
+    
+    Graph g;
+     /*g.addEdge(0, 1);
+	g.addEdge(0, 2);
+	g.addEdge(1, 2);
+	g.addEdge(2, 0);
+	g.addEdge(2, 3);
+	g.addEdge(3, 3);
+ 
+    g.DFS(9);
+    cout<<endl;
+    g.bfs(2);*/
+	
+
+	while(true)
+{
+	cout<<"1. Enter graph edges\n2. Show dfs\n3. Show bfs\n4. Exit";
+	int c;cin>>c;
+	if(c==1){
+        int a,b;cin>>a>>b;
+		g.addEdge(a,b);
+	}
+	else if(c==2){
+         
+		 g.DFS(9);
+		 cout<<endl;
+	}
+	else if(c==3){
+             int tem;cout<<"Enter the vertex from which you want bfs to run\n";cin>>tem;
+		 g.bfs(tem);
+		 cout<<endl;
+	}
+	else{
+		break;
+	}
+}    return 0;
+}
