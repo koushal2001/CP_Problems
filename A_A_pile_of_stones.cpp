@@ -1,4 +1,6 @@
 #include<bits/stdc++.h>
+#include<iostream>
+#define MAX 1000000007
 using namespace std;
 #define ll long long
 int main()
