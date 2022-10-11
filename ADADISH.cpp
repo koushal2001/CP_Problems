@@ -9,6 +9,8 @@ int main(){
         cin>>n;
         for(int i=0;i<n;i++){
             cin>>c[i];
+            
+            
         }
         sort(c,c+n,greater<int>());
         s1=c[0],s2=c[1];
